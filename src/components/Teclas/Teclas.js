@@ -5,6 +5,15 @@ import { Link } from "react-router-dom";
 import errorSound from "./1.mp3";
 
 export default function Jogo() {
+    
+    const pontosPorRodada = 10
+    const consumoDePontos = 50
+    const facil = 80
+    const medio = 50
+    const dificil = 40
+    const impossivel = 30
+
+
     const [progress, setProgress] = useState(0);
     const [activeKeys, setActiveKeys] = useState([]);
     const [sequence, setSequence] = useState([]);
@@ -26,7 +35,7 @@ export default function Jogo() {
     const [difficulty, setDifficulty] = useState("Facil");
 
     const difficultyLevels = useMemo(() => ["Facil", "Medio", "Dificil", "Impossivel"], []);
-    const difficultyIntervals = useMemo(() => [80, 50, 40, 30], []);
+    const difficultyIntervals = useMemo(() => [facil, medio, dificil, impossivel], []);
 
     const showModal = () => {
         setShow(true);
@@ -47,12 +56,12 @@ export default function Jogo() {
     };
 
     const continueGame = () => {
-        if (points >= 50) {
+        if (points >= consumoDePontos) {
             setLevel((prevLevel) => prevLevel - 1);
             setShow(false);
             setGameOver(false);
             setPoints((prevPoints) => {
-                const newPoints = prevPoints - 50;
+                const newPoints = prevPoints - consumoDePontos;
                 localStorage.setItem("points", newPoints);
                 return newPoints;
             });
@@ -99,7 +108,7 @@ export default function Jogo() {
         if (!isReset) {
             setLevel((prevLevel) => prevLevel + 1);
             setPoints((prevPoints) => {
-                const newPoints = prevPoints + 10;
+                const newPoints = prevPoints + pontosPorRodada;
                 localStorage.setItem("points", newPoints);
 
 
@@ -205,7 +214,7 @@ export default function Jogo() {
                                 <button title="Retornar ao menu inicial" onClick={hideModal}>Sair</button>
                             </Link>
                             <button title="Retornar ao nivel [ 1 ]" onClick={restartGame}>Reiniciar</button>
-                            <button title="Será consumido 50 pontos ao continuar" onClick={continueGame}>
+                            <button title={`Será consumido ${consumoDePontos} pontos ao continuar`} onClick={continueGame}>
                                 Continuar
                             </button> 
                         </div>
