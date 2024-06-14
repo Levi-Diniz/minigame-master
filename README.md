@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+<h1 align="center"> Biblioteca de Jogos </h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+Projeto criado por Levi Diniz para participar de um processo seletivo, desenvolvido com o objetivo de ser uma biblioteca de jogos online. <br/>
+</p>
 
-## Available Scripts
+<p align="center">
+  <a href="#-tecnologias">🚀 Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">💻 Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-licença">📝 Licença</a>
+</p>
 
-In the project directory, you can run:
+<p align="center">
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
+</p>
 
-### `npm start`
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<p align="center">
+  <img alt="projeto Biblioteca de Jogos" src="https://media.discordapp.net/attachments/1036087848593535057/1251290011480100894/image.png?ex=666e0a22&is=666cb8a2&hm=731e51c48edb4d1b8e4585db8eaf6e4a912fd5db8261aacfe8627569a56cbe27&=&format=webp&quality=lossless&width=550&height=235" width="100%">
+</p>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Tecnologias
 
-### `npm test`
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React
+- CSS
+- React Router DOM
 
-### `npm run build`
+## 💻 Projeto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+A Biblioteca de Jogos é uma plataforma online que visa agregar diversos jogos em um único lugar. Atualmente, possui um jogo disponível:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Desafio das Teclas**: Um jogo interativo que desafia os usuários a pressionarem as teclas corretas o mais rápido possível.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📝 Licença
 
-### `npm run eject`
+Esse projeto está sob a licença MIT.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feito com ♥ por Levi Diniz :wave: [Participe da nossa comunidade!]([https://discord.gg/rocketseat](https://discord.gg/servidordosprogramadores))
