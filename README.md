@@ -17,7 +17,7 @@ Projeto criado por Levi Diniz para participar de um processo seletivo, desenvolv
 <br>
 
 <p align="center">
-  <img alt="projeto Biblioteca de Jogos" src="https://github.com/Levi-Diniz/your_links/assets/159601654/13b5cd4c-4249-4a70-981b-34ed5d84c754">
+  <img alt="projeto Biblioteca de Jogos" src="https://github.com/Levi-Diniz/minigame-master/assets/159601654/63f873e5-1ec0-42ac-9cc5-e41f711efbc5">
 </p>
 <p align="center">
   <img alt="projeto Biblioteca de Jogos" src="https://github.com/Levi-Diniz/your_links/assets/159601654/7e99b221-c5a6-4e02-87d9-27a46dd4475b">
