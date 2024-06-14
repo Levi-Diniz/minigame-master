@@ -12,33 +12,29 @@ export default function Menu() {
     const defaultImagePerfil = 'imgs/User.png';
     const [imagePerfil, setImagePerfil] = useState(defaultImagePerfil);
     const [name, setName] = useState('Seu Nome');
-    const [points, setPoints] = useState(0); // Estado para os pontos
+    const [points, setPoints] = useState(0); 
     const [show, setShow] = useState(false);
     const [showEdit, setShowEdit] = useState(false);
     const [newName, setNewName] = useState('');
     const [newImagePerfil, setNewImagePerfil] = useState('');
-    const [bestLevel, setBestLevel] = useState(0); // Estado para o melhor nível conquistado
+    const [bestLevel, setBestLevel] = useState(0); 
 
     useEffect(() => {
-        // Carrega os pontos do local storage quando o componente é montado
         const savedPoints = localStorage.getItem('points');
         if (savedPoints) {
             setPoints(parseInt(savedPoints, 10));
         }
 
-        // Carrega o nome do local storage quando o componente é montado
         const savedName = localStorage.getItem('name');
         if (savedName) {
             setName(savedName);
         }
 
-        // Carrega a imagem do local storage quando o componente é montado
         const savedImage = localStorage.getItem('imagePerfil');
         if (savedImage) {
             setImagePerfil(savedImage);
         }
 
-        // Carrega o high score (melhor nível) do local storage quando o componente é montado
         const savedHighScore = localStorage.getItem('highScore');
         if (savedHighScore) {
             setBestLevel(parseInt(savedHighScore, 10));
@@ -145,9 +141,7 @@ export default function Menu() {
                                         placeholder='image url..'
                                         required
                                     />
-                                    {/* <div> */}
-                                        <button type='submit'>Salvar</button>
-                                    {/* </div> */}
+                                    <button type='submit'>Salvar</button>
                                 </form>
                             </div>
                         </div>

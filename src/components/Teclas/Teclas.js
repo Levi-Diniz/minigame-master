@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import style from "./teclas.module.css";
 import Modal from "../Modal/Modal";
 import { Link } from "react-router-dom";
-import errorSound from "./1.mp3"; // Importe o arquivo de áudio de erro
+import errorSound from "./1.mp3";
 
 export default function Jogo() {
     const [progress, setProgress] = useState(0);
@@ -22,7 +22,7 @@ export default function Jogo() {
         return savedHighScore ? parseInt(savedHighScore, 10) : 0;
     });
     const [errorMessage, setErrorMessage] = useState("");
-    const [playErrorSound, setPlayErrorSound] = useState(false); // Estado para controlar a reprodução do som de erro
+    const [playErrorSound, setPlayErrorSound] = useState(false); 
 
     const showModal = () => {
         setShow(true);
@@ -30,7 +30,7 @@ export default function Jogo() {
 
     const hideModal = () => {
         setShow(false);
-        setErrorMessage(""); // Resetar a mensagem de erro ao fechar o modal
+        setErrorMessage("");
     };
 
     const restartGame = () => {
@@ -38,7 +38,7 @@ export default function Jogo() {
         setShow(false);
         setGameOver(false);
         setLevel(1);
-        generateRandomKeys(true); // Passa true para não incrementar o nível
+        generateRandomKeys(true);
     };
 
     const continueGame = () => {
@@ -48,10 +48,10 @@ export default function Jogo() {
             setGameOver(false);
             setPoints((prevPoints) => {
                 const newPoints = prevPoints - 20;
-                localStorage.setItem("points", newPoints); // Salva os pontos atualizados
+                localStorage.setItem("points", newPoints);
                 return newPoints;
             });
-            generateRandomKeys(false); // Continua o jogo do mesmo nível
+            generateRandomKeys(false);
         } else {
             setErrorMessage("Você não tem pontos suficientes para continuar.");
         }
@@ -91,24 +91,22 @@ export default function Jogo() {
         setProgress(0);
         setGameOver(false);
         if (!isReset) {
-            // Atualiza o nível e os pontos
             setLevel((prevLevel) => prevLevel + 1);
             setPoints((prevPoints) => {
                 const newPoints = prevPoints + 10;
-                localStorage.setItem("points", newPoints); // Salva os pontos atualizados
+                localStorage.setItem("points", newPoints);
                 return newPoints;
             });
 
-            // Atualiza o high score apenas se o nível atual for maior que o high score atual
             if (level > highScore) {
                 setHighScore(level);
-                localStorage.setItem("highScore", level); // Salva o high score atualizado
+                localStorage.setItem("highScore", level); 
             }
         }
     }, [highScore, level]);
 
     useEffect(() => {
-        generateRandomKeys(true); // Inicializa sem incrementar o nível
+        generateRandomKeys(true);
     }, [generateRandomKeys]);
 
     useEffect(() => {
@@ -126,11 +124,11 @@ export default function Jogo() {
                 setCurrentPosition((prevPosition) => prevPosition + 1);
             
                 if (currentPosition + 1 === activeKeys.length) {
-                    generateRandomKeys(); // Gera novas teclas
+                    generateRandomKeys();
                 }
             } else {
                 setGameOver(true);
-                setPlayErrorSound(true); // Ativa o estado para reproduzir o som de erro
+                setPlayErrorSound(true);
                 showModal();
             }
         };
@@ -145,8 +143,8 @@ export default function Jogo() {
         const errorAudio = new Audio(errorSound);
 
         if (playErrorSound) {
-            errorAudio.play(); // Reproduz o som de erro
-            setPlayErrorSound(false); // Reseta o estado após a reprodução do som
+            errorAudio.play(); 
+            setPlayErrorSound(false);
         }
     }, [playErrorSound]);
 
@@ -196,7 +194,7 @@ export default function Jogo() {
                             <button onClick={continueGame}>Continuar</button> 
                         </div>
                         <div className={style.errorMessage}>
-                            {errorMessage && <p>{errorMessage}</p>} {/* Exibe a mensagem de erro se houver */}
+                            {errorMessage && <p>{errorMessage}</p>}
                         </div>
                     </div>
                 </Modal>

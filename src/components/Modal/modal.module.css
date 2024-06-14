@@ -15,7 +15,6 @@
 
 .teste {
     position: relative;
-    /* width: 100%; */
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid rgba(255, 255, 255, 0.164);
@@ -54,10 +53,6 @@
     background-color: #181829;
     
     border-radius: 12px;
-    /* padding: 10px; */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
 }
 
 
