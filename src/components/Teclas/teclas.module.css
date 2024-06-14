@@ -172,13 +172,26 @@ main {
     justify-content: space-around;
     align-items: center;
     border-radius: 12px;
-    border: 1px solid rgb(247, 247, 247);
+    /* border: 1px solid rgb(247, 247, 247); */
 
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 14px;
     color: rgb(238, 255, 0);
+}
+.caixaGameHighScore div{
+    display: flex;
+    /* border: 1px solid rgb(247, 247, 247); */
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 9px;
+    color: rgba(255, 255, 255, 0.404);
+
 }
 .Score1 {
     width: 25px;
@@ -187,7 +200,7 @@ main {
     justify-content: space-around;
     align-items: center;
     border-radius: 12px;
-    border: 1px solid rgb(247, 247, 247);
+    /* border: 1px solid rgb(247, 247, 247); */
 
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -204,7 +217,7 @@ main {
     justify-content: space-around;
     align-items: center;
     border-radius: 12px;
-    border: 1px solid rgb(247, 247, 247);
+    /* border: 1px solid rgb(247, 247, 247); */
 
     font-family: "Roboto", sans-serif;
     font-weight: 500;

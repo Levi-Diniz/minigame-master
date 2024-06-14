@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import errorSound from "./1.mp3";
 
 export default function Jogo() {
-    
+
     const pontosPorRodada = 10
     const consumoDePontos = 50
     const facil = 80
@@ -80,7 +80,7 @@ export default function Jogo() {
                 setTimeUp(true);
                 setGameOver(true);
                 clearTimeout(timer);
-                showModal();
+                // showModal();
             }
         }, intervalTime);
 
@@ -180,9 +180,17 @@ export default function Jogo() {
                 <p className={style.gameName}>Mini-Game</p>
                 <p className={style.gameTag}>Pressione as teclas corretamente</p>
                 <div className={style.caixaGameHighScore}>
-                    <p className={style.Score1} >{level}</p>
-                    <p className={style.Score2} >{difficulty}</p>
-                    <p className={style.gameHighScore}> {highScore}</p>
+                    <div>NIVEL:
+                        <p className={style.Score1} >{level}</p>
+                    </div>
+                    <div>
+                        DIFICULDADE:
+                        <p className={style.Score2} >{difficulty}</p>
+                    </div>
+                    <div>
+                        HIGH SCORE:
+                       <p className={style.gameHighScore}> {highScore}</p>
+                    </div>
                 </div>
                 <div className={style.mecanicaGame}>
                     <div className={style.teclas}>
