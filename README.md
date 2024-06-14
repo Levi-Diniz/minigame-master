@@ -40,4 +40,4 @@ Esse projeto está sob a licença MIT.
 
 ---
 
-Feito com ♥ por Levi Diniz :wave: [Participe da nossa comunidade!]([https://discord.gg/rocketseat](https://discord.gg/servidordosprogramadores))
+Feito com ♥ por Levi Diniz :wave: [Participe da nossa comunidade!](https://discord.gg/servidordosprogramadores)
