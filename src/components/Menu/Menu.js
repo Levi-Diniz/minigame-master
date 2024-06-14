@@ -82,7 +82,7 @@ export default function Menu() {
                 <div className={styles.container}>
                     <div className={styles.player}>
                         <div className={styles.caixaEdit}>
-                            <h className={styles.edit} onClick={togleShowModalEdit}>
+                            <h title="Editar informações do perfil" className={styles.edit} onClick={togleShowModalEdit}>
                                 Editar
                             </h>
                         </div>
