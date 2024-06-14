@@ -80,7 +80,7 @@ export default function Jogo() {
                 setTimeUp(true);
                 setGameOver(true);
                 clearTimeout(timer);
-                // showModal();
+                showModal();
             }
         }, intervalTime);
 
