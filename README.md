@@ -22,6 +22,7 @@ Projeto criado por Levi Diniz para participar de um processo seletivo, desenvolv
 <p align="center">
   <img alt="projeto Biblioteca de Jogos" src="https://cdn.discordapp.com/attachments/1036087848593535057/1251291489179406488/image.png?ex=666e0b82&is=666cba02&hm=a717cef097150d8ab54d34578067b4a4d6cf0bd6cfb7f95c3f04a95bdc9fe5c0&">
 </p>
+
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
