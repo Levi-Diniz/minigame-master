@@ -17,10 +17,10 @@ Projeto criado por Levi Diniz para participar de um processo seletivo, desenvolv
 <br>
 
 <p align="center">
-  <img alt="projeto Biblioteca de Jogos" src="https://cdn.discordapp.com/attachments/1036087848593535057/1251292137593765939/image.png?ex=666e0c1d&is=666cba9d&hm=072b8dcbd53f0529507fdff46e6d6573e1bbdb812003837ceb9a0f772c232e68&">
+  <img alt="projeto Biblioteca de Jogos" src="https://github.com/Levi-Diniz/your_links/assets/159601654/13b5cd4c-4249-4a70-981b-34ed5d84c754">
 </p>
 <p align="center">
-  <img alt="projeto Biblioteca de Jogos" src="https://cdn.discordapp.com/attachments/1036087848593535057/1251291489179406488/image.png?ex=666e0b82&is=666cba02&hm=a717cef097150d8ab54d34578067b4a4d6cf0bd6cfb7f95c3f04a95bdc9fe5c0&">
+  <img alt="projeto Biblioteca de Jogos" src="https://github.com/Levi-Diniz/your_links/assets/159601654/7e99b221-c5a6-4e02-87d9-27a46dd4475b">
 </p>
 
 ## 🚀 Tecnologias
